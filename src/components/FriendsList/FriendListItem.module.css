@@ -1,0 +1,29 @@
+.status {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+.isOnline {
+  composes: status;
+  background-color: #47b04b;
+}
+
+.isOffline {
+  composes: status;
+  background-color: #fe5056;
+}
+
+.avatar {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-right: 25px;
+}
+
+.name {
+  font-size: 40px;
+}

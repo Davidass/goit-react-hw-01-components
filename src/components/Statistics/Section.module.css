@@ -1,0 +1,26 @@
+.section {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  padding-top: 25px;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: var(--boxShadow);
+}
+.statistics {
+  display: flex;
+  width: 336px;
+  height: 164px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  box-shadow: -3px 5px 12px -3px rgba(0, 0, 0, 0.75);
+}
+
+.title {
+  font-size: 24px;
+  color: var(--color-title);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+}
