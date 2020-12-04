@@ -10,11 +10,11 @@ function FriendListItem({
 }) {
   const statusClassName = isOnline ? `${s.isOnline}` : `${s.isOffline}`;
   return (
-    <>
+    <li className={s.item}>
       <span className={statusClassName}>{isOnline}</span>
       <img className={s.avatar} src={avatar} alt={name} width="48" />
       <p className={s.name}>{name}</p>
-    </>
+    </li>
   );
 }
 

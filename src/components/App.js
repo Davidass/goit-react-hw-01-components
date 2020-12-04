@@ -1,15 +1,14 @@
 import Container from 'components/Container/Container';
 import Profile from 'components/Profile/Profile';
-import Section from 'components/Statistics/Section';
-import FriendList from 'components/FriendsList/FriendList';
+import FriendList from 'components/FriendListItem/FriendList/FriendList';
 import TransactionHistory from 'components/Transactions/TransactionHistory';
-import StatisticList from 'components/Statistics/StatisticList';
+import Statistics from 'components/Statistics/Statistics';
 
-import transactions from './data/transactions.json';
-import user from './data/user.json';
-import statisticalData from './data/statistical-data.json';
+import transactions from 'data/transactions.json';
+import user from 'data/user.json';
+import statisticalData from 'data/statistical-data.json';
 
-import friends from './data/friends.json';
+import friends from 'data/friends.json';
 
 export default function App() {
   return (
@@ -23,9 +22,12 @@ export default function App() {
         stats={user.stats}
       />
       {/* Task- 2*/}
-      <Section title="Upload stats">
+      {/* <Section title="Upload stats">
         <StatisticList items={statisticalData} />
       </Section>
+       */}
+      <Statistics title="Upload stats" items={statisticalData} />
+      <Statistics stats={statisticalData} />
       {/* Task- 3*/}
       <FriendList friends={friends} />
       {/* Task- 4*/}
