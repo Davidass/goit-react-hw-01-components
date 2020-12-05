@@ -1,6 +1,6 @@
 import Container from 'components/Container/Container';
 import Profile from 'components/Profile/Profile';
-import FriendList from 'components/FriendListItem/FriendList/FriendList';
+import FriendList from 'components/FriendList/FriendList';
 import TransactionHistory from 'components/Transactions/TransactionHistory';
 import Statistics from 'components/Statistics/Statistics';
 import Section from './Statistics/Section/Section';
