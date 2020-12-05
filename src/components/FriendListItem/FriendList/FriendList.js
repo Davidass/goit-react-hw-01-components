@@ -7,9 +7,10 @@ import s from './FriendsList.module.css';
 function FriendList({ friends }) {
   return (
     <section className={s.section}>
-      <ul className={s.friendList} key={friends.id}>
+      <ul className={s.friendList}>
         {friends.map(friend => (
           <FriendListItem
+            key={friend.id}
             isOnline={friend.isOnline}
             avatar={friend.avatar}
             name={friend.name}

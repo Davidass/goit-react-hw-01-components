@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import Section from './Section/Section';
 
 import s from './StatisticListItem/StatisticList.module.css';
 
@@ -7,14 +6,19 @@ import StatisticListItem from './StatisticListItem/StatisticListItem';
 
 function Statistics({ title, stats }) {
   return (
-    <Section title="Upload stats">
-      {title ? <h2 className={s.title}>{title}</h2> : null}
-      <ul className={s.statistics} key={stats.id}>
+    <>
+      {title && <h2 className={s.title}>Upload stats</h2>}
+
+      <ul className={s.statistics}>
         {stats.map(stat => (
-          <StatisticListItem label={stat.label} percentage={stat.percentage} />
+          <StatisticListItem
+            key={stat.id}
+            label={stat.label}
+            percentage={stat.percentage}
+          />
         ))}
       </ul>
-    </Section>
+    </>
   );
 }
 

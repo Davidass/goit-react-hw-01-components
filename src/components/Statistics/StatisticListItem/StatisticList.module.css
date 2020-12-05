@@ -1,6 +1,5 @@
 .statList {
   display: flex;
-  margin-top: 10px;
 }
 
 .item {
@@ -12,4 +11,19 @@
   height: 50px;
   padding: 10px;
   color: #fff;
+}
+
+.statistics {
+  display: flex;
+  margin-top: 30px;
+  border-radius: 5px;
+  box-shadow: -3px 5px 12px -3px rgba(0, 0, 0, 0.75);
+}
+
+.title {
+  font-size: 24px;
+  color: var(--color-title);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1.2px;
 }
