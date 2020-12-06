@@ -11,7 +11,7 @@ function getRandomColor() {
 function StatisticListItem({ label, percentage }) {
   return (
     <li className={s.item} style={{ backgroundColor: getRandomColor() }}>
-      <span className="labe">.{label}</span>
+      <span className="labe">{label}</span>
       <span className="percentage">{percentage}%</span>
     </li>
   );
